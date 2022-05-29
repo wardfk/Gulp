@@ -1,0 +1,155 @@
+
+// display flex
+
+@mixin flex($disp: flex,$jc: center, $ai: center, $fw: nowrap) {
+    display: $disp;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+}
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// w100 vh100
+
+@mixin screen(){
+    width: 100%;
+    min-height: 100vh;
+}
+
+// link radius 50px
+
+@mixin linkRounded ($pad: 20px 50px, $round: 50px, $bgc: $red, $texttr: uppercase, $tcolor: white) {
+    padding: $pad;
+    border-radius: $round;
+    background-color: $bgc;
+    text-transform: $texttr;
+    color: white;
+    text-decoration: none;
+}
+
+%linkRounded{
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: rgba($color: #ff0000, $alpha: 1.0);
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+// box radius 40px
+
+@mixin boxRounded ($round: 40px, $width: 220px, $height: 220px) {
+    border-radius: $round;
+    width: $width;
+    min-height: $height;
+}
+
+%boxRounded{
+    border-radius: 40px;
+    width: 220px;
+    min-height: 220px;
+}
+
+// box radius 50% 
+
+@mixin boxCircle ($round: 50%, $width: 180px, $height: 180px){
+    border-radius: $round;
+    width: $width;
+    min-height: $height;
+}
+
+%boxCircle{
+    border-radius: 50%;
+    width: 180px;
+    min-height: 180px;
+}
+
+@mixin flex($jc: center, $ai: center, $fw: nowrap) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+}
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin caja ($ancho:100%, $alto:100vh) {
+    width: $ancho;
+    min-height: $alto;
+}
+
+%caja{
+    width: 100%;
+    min-height: 100vh;
+}
+
+@mixin borde($tipo: solid, $tam: 1px, $color: black) {
+    border: $tipo, $tam, $color;
+}
+
+@mixin knoprecht($pad: 15px 25px, $hoek: 5px, $kleurknop: $azulMedio, $kleur: $blanco) {
+    padding: $pad;
+    border-radius: $hoek;
+    background-color: $kleurknop;
+    color: $kleur;
+}
+
+%knoprecht{
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: $azulMedio;
+    color: white;
+};
+
+@mixin cajas ($redondo: 8px, $bgc: $blanco, $pad: 15px, $sombra: 0 0 5px rgba(0, 0, 0, .3)) {
+    border-radius: $redondo;
+    background-color: $bgc;
+    padding: $pad;
+    box-shadow: $sombra
+};
+
+%cajas{
+    border-radius: 8px;
+    background-color: $blanco;
+    padding: 15px;
+    box-shadow: 0 0  5px rgba(0, 0, 0, .1)
+};
+
+@mixin iconPanel ($kleur: $azulMedio, $redondo: 30px, $pad: 5px 10px, $color: $negro){
+    background-color: $kleur;
+    border-radius: $redondo;
+    padding: $pad;
+    color: $color;
+};
+
+%iconPanel{
+    background-color: $azulMedio;
+    border-radius: 50%;
+};
+
+@mixin correcto ($redondo: 20px, $color: $blanco, $bgc: $naranja) {
+    border-radius: $redondo;
+    color: $color;
+    background-color: $bgc;
+};
+
+
+@mixin rendondoV ($redondo: 100%, $color: $blanco, $bgc: $rojo){
+    border-radius: $redondo;
+    color: $color;
+    background-color: $bgc;
+}
+
+%trapezium{
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}

@@ -6,249 +6,278 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gulp & Sass</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md">
-    
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class=" d-flex-icon">Menu <i class="bi bi-list"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav ms-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Visión general</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Páginas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Docs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link knop" href="#">Descargar gratis</a>
-                        </li>
-                    </ul>
-                   
-                </div>
-            </div>
-          </nav>
-    </header>
     <main>
-        <section>
-            <div>
-                <h1>Es hora de amplificar su <span>negocio en línea</span></h1>
-                <p>Cree un sitio web hermoso y moderno con componentes flexibles de Bootstrap creados desde cero.</p>
-                <div>
-                    <a href="#">Comenzar</a>
-                    <a href="#">Ver ilustraciones</a>
+        <header id="header">
+            <nav class="navbar navbar-expand-md">
+
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=" d-flex-icon">Menu <i class="bi bi-list"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav ms-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Visión general</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Páginas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Docs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link knop" href="#">Descargar gratis</a>
+                            </li>
+                        </ul>
+                    
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img src="img/imagenCabecera.svg" alt="">
+            </nav>
+        </header>
+        <section id="one">
+            <div class="container">
+                <div class="row">
+                    <div class="amplificar col-md-6">
+                        <h1>Es hora de amplificar su <span>negocio en línea</span></h1>
+                        <p>Cree un sitio web hermoso y moderno con componentes flexibles de Bootstrap creados desde cero.</p>
+                        <div class="buttons">
+                            <a href="#">Comenzar</a>
+                            <a href="#">Ver ilustraciones</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/imagenCabecera.svg" alt="">
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="componentes">
-            <div>
-                <h3>Componentes creados cuidadosamente diseñados listos para usar en su proyecto</h3>
-                <p>Utilice el diseño atómico para crear componentesm secciones y luego, páginas</p>
+        <section id="componentes" class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 mx-auto text-center">
+                        <h3>Componentes creados cuidadosamente diseñados listos para usar en su proyecto</h3>
+                        <p>Utilice el diseño atómico para crear componentesm secciones y luego, páginas</p>
+                    </div>
+                </div>
+                <div class="articles row">
+                    <article class="col-md-4">
+                        <div>
+                            <img src="img/imagen1.svg" alt="">
+                            <h4>Da rienda suelta a tu creatividad</h4>
+                            <p>
+                                Quick Website UI Kit (FREE) contiene componentes y páginas que son fáciles de personalizar y cambiar.
+                            </p>
+                        </div>                    
+                    </article>
+                    <article class="col-md-4">
+                        <div>
+                            <img src="img/imagen2.svg" alt="">
+                            <h4>Obtén más resultados</h4>
+                            <p>
+                                Quick Website UI Kit (FREE) contiene componentes y páginas que son fáciles de personalizar y cambiar.
+                            </p>
+                        </div>                    
+                    </article>
+                    <article class="col-md-4">
+                        <div>
+                            <img src="img/imagen3.svg" alt="">
+                            <h4>Aumenta tu audiencia</h4>
+                            <p>
+                                Quick Website UI Kit (FREE) contiene componentes y páginas que son fáciles de personalizar y cambiar.
+                            </p>
+                        </div>                
+                    </article>
+                </div>
             </div>
-            <div>
-                <article>
-                    <div>
+        </section>
+        <section id="administracion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 offset-1">
                         <img src="img/imagen1.svg" alt="">
                     </div>
-                    <div>
-                        <h4>Da rienda suelta a tu creatividad</h4>
-                        <p>
-                            Quick Website UI Kit (FREE) contiene componentes y páginas que son fáciles de personalizar y cambiar.
-                        </p>
-                    </div>                    
-                </article>
-                <article>
-                    <div>
+                    <div class="col-md-5">
+                        <h3>¿Necesita um panel de administración para su sitio web?</h3>
+                        <p>Con Quick obienes componentes y ejemplos, incluidas toneladas de variables que te ayudarán a personalizar este tema con facilidad</p>
+                        <div class="perfecto">
+                            <div class="icon">
+
+                                <i class="bi bi-file-binary"></i>
+                            </div>
+                            <p>Perfeco para startups modernas</p>
+                        </div>
+                        <div class="perfecto">
+                            <div class="icon">
+
+                                <i class="bi bi-house-door"></i>
+                            </div>
+                            <p>Listo para ser personalizado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 offset-1">
+                        <h3>¿Necesita um panel de administración para su sitio web?</h3>
+                        <p>Con Quick obienes componentes y ejemplos, incluidas toneladas de variables que te ayudarán a personalizar este tema con facilidad</p>
+                        <div class="perfecto">
+                            <div class="icon">
+
+                                <i class="bi bi-file-binary"></i>
+                            </div>
+                            <p>Perfeco para startups modernas</p>
+                        </div>
+                        <div class="perfecto">
+                            <div class="icon">
+                                <i class="bi bi-house-door"></i>
+                            </div>
+                            <p>Listo para ser personalizado</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
                         <img src="img/imagen2.svg" alt="">
                     </div>
-                    <div>
-                        <h4>Obtén más resultados</h4>
-                        <p>
-                            Quick Website UI Kit (FREE) contiene componentes y páginas que son fáciles de personalizar y cambiar.
-                        </p>
-                    </div>                    
-                </article>
-                <article>
-                    <div>
-                        <img src="img/imagen3.svg" alt="">
-                    </div>
-                    <div>
-                        <h4>Aumenta tu audiencia</h4>
-                        <p>
-                            Quick Website UI Kit (FREE) contiene componentes y páginas que son fáciles de personalizar y cambiar.
-                        </p>
-                    </div>                
-                </article>
-            </div>
-        </section>
-        <section id="administracion">
-            <div>
-                <img src="img/imagen4.svg" alt="">
-            </div>
-            <div>
-                <h3>¿Necesita um panel de administración para su sitio web?</h3>
-                <p>Con Quick obienes componentes y ejemplos, incluidas toneladas de variables que te ayudarán a personalizar este tema con facilidad</p>
-                <div>
-                    <i class="bi bi-file-binary"></i>
-                    <p>Perfeco para startups modernas</p>
-                </div>
-                <div>
-                    <i class="bi bi-house-door"></i>
-                    <p>Listo para ser personalizado</p>
                 </div>
             </div>
         </section>
-        <section id="administracion">
-            <div>
-                <h3>¿Necesita um panel de administración para su sitio web?</h3>
-                <p>Con Quick obienes componentes y ejemplos, incluidas toneladas de variables que te ayudarán a personalizar este tema con facilidad</p>
-                <div>
-                    <i class="bi bi-file-binary"></i>
-                    <p>Perfeco para startups modernas</p>
-                </div>
-                <div>
-                    <i class="bi bi-house-door"></i>
-                    <p>Listo para ser personalizado</p>
-                </div>
-            </div>
-            <div>
-                <img src="img/imagen4.svg" alt="">
-            </div>
-        </section>
+
+
         <section id="experiencia">
-            <div>
-                <h3>¿Estás listo para crecer más rápido?</h3>
-                <h5>Crea tu propia experiencia</h5>
-                <a href="#">Aprende más</a>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="head">
+                        <h3>¿Estás listo para crecer más rápido?</h3>
+                        <h5>Crea tu propia experiencia</h5>
+                        <a href="#">Aprende más</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <card>
-                    <div>
-                        <p>Nuevo</p>
-                    </div>
-                    <div>
-                        <p>Escucha la naturaleza</p>
-                        Diseño simple con un marchado HTML limpio e inteligente.
-                    </div>
-                </card>
-                <card>
-                    <div>
-                        <p>Nuevo</p>
-                    </div>
-                    <div>
-                        <p>Escucha la naturaleza</p>
-                        Diseño simple con un marchado HTML limpio e inteligente.
-                    </div>
-                </card>
-                <card>
-                    <div>
-                        <p>Nuevo</p>
-                    </div>
-                    <div>
-                        <p>Escucha la naturaleza</p>
-                        Diseño simple con un marchado HTML limpio e inteligente.
-                    </div>
-                </card>
-                <card>
-                    <div>
-                        <p>Nuevo</p>
-                    </div>
-                    <div>
-                        <p>Escucha la naturaleza</p>
-                        Diseño simple con un marchado HTML limpio e inteligente.
-                    </div>
-                </card>
-                <card>
-                    <div>
-                        <p>Nuevo</p>
-                    </div>
-                    <div>
-                        <p>Escucha la naturaleza</p>
-                        Diseño simple con un marchado HTML limpio e inteligente.
-                    </div>
-                </card>
-                <card>
-                    <div>
-                        <p>Nuevo</p>
-                    </div>
-                    <div>
-                        <p>Escucha la naturaleza</p>
-                        Diseño simple con un marchado HTML limpio e inteligente.
-                    </div>
-                </card>
+            <div class="container">
+                <div class="row nuevo-container">
+                    <card class="cards col-md-4">
+                        <div class="nuevo nuevo-1">
+                            <p>Nuevo</p>
+                        </div>
+                        <div>
+                            <p><b>Escucha la naturaleza</b></p>
+                            <p>Diseño simple con un marchado HTML limpio e inteligente.</p>
+                        </div>
+                    </card>
+                    <card class="cards col-md-4">
+                        <div class="nuevo nuevo-2">
+                            <p>Nuevo</p>
+                        </div>
+                        <div>
+                            <p><b>Escucha la naturaleza</b></p>
+                            <p>Diseño simple con un marchado HTML limpio e inteligente.</p>
+                        </div>
+                    </card>
+                    <card class="cards col-md-4">
+                        <div class="nuevo nuevo-3">
+                            <p>Nuevo</p>
+                        </div>
+                        <div>
+                            <p><b>Escucha la naturaleza</b></p>
+                            <p>Diseño simple con un marchado HTML limpio e inteligente.</p>
+                        </div>
+                    </card>
+                    <card class="cards col-md-4">
+                        <div class="nuevo nuevo-4">
+                            <p>Nuevo</p>
+                        </div>
+                        <div>
+                            <p><b>Escucha la naturaleza</b></p>
+                            <p>Diseño simple con un marchado HTML limpio e inteligente.</p>
+                        </div>
+                    </card>
+                    <card class="cards col-md-4">
+                        <div class="nuevo nuevo-5">
+                            <p>Nuevo</p>
+                        </div>
+                        <div>
+                            <p><b>Escucha la naturaleza</b></p>
+                            <p>Diseño simple con un marchado HTML limpio e inteligente.</p>
+                        </div>
+                    </card>
+                    <card class="cards col-md-4">
+                        <div class="nuevo nuevo-6">
+                            <p>Nuevo</p>
+                        </div>
+                        <div>
+                            <p><b>Escucha la naturaleza</b></p>
+                            <p>Diseño simple con un marchado HTML limpio e inteligente.</p>
+                        </div>
+                    </card>
+                </div>
             </div>
         </section>
-        <section id="caracteristicas">
-            <div>
-                <a href="#">Características claves</a>
-                <p>Quick es una plantilla HTML premium que incluye componentes y páginas adaptables para diversas industrias, además de nuevas cada mes.</p>
+        <section id="caracteristicas" class="container">
+            <div class="row head col-md-5">
+                <div>
+                    <a href="#">Características claves</a>
+                    <p>Quick es una plantilla HTML premium que incluye componentes y páginas adaptables para diversas industrias, además de nuevas cada mes.</p>
+                </div>
             </div>
-            <div>
-                <card>
-                    <div>
+            <div class="vinkjes">
+                <card class="col-md-4 vink-1">
+                    <div class="vinkje">
                         <i class="bi bi-check-lg"></i>
                     </div>
                     <div>
-                        <h5>100% receptivo</h5>
+                        <h6>100% receptivo</h6>
                         <p>construido para ser personalizado.</p>
                     </div>
                 </card>
-                <card>
-                    <div>
+                <card class="col-md-4 vink-2">
+                    <div class="vinkje">
                         <i class="bi bi-check-lg"></i>
                     </div>
                     <div>
-                        <h5>100% receptivo</h5>
+                        <h6>100% receptivo</h6>
                         <p>construido para ser personalizado.</p>
                     </div>
                 </card>
-                <card>
-                    <div>
+                <card class="col-md-4 vink-3">
+                    <div class="vinkje">
                         <i class="bi bi-check-lg"></i>
                     </div>
                     <div>
-                        <h5>100% receptivo</h5>
+                        <h6>100% receptivo</h6>
                         <p>construido para ser personalizado.</p>
                     </div>
                 </card>
-                <card>
-                    <div>
+                <card class="col-md-4 vink-4">
+                    <div class="vinkje">
                         <i class="bi bi-check-lg"></i>
                     </div>
                     <div>
-                        <h5>100% receptivo</h5>
+                        <h6>100% receptivo</h6>
                         <p>construido para ser personalizado.</p>
                     </div>
                 </card>
-                <card>
-                    <div>
+                <card class="col-md-4 vink-5">
+                    <div class="vinkje">
                         <i class="bi bi-check-lg"></i>
                     </div>
                     <div>
-                        <h5>100% receptivo</h5>
+                        <h6>100% receptivo</h6>
                         <p>construido para ser personalizado.</p>
                     </div>
                 </card>
-                <card>
-                    <div>
+                <card class="col-md-4 vink-6">
+                    <div class="vinkje">
                         <i class="bi bi-check-lg"></i>
                     </div>
                     <div>
-                        <h5>100% receptivo</h5>
+                        <h6>100% receptivo</h6>
                         <p>construido para ser personalizado.</p>
                     </div>
                 </card>
@@ -260,7 +289,7 @@
                 <p>Miles de desarrolladores de todo el mundo ya han convertido a Quick en la herramienta principal para crear sitios web.</p>
             </div>
             <div>
-                <card class="producto-uno">
+                <card class="col-md-4" class="producto-uno">
                     <div>
                         <p class="precio">
                             $49
@@ -287,7 +316,7 @@
                         <a href="#">Comprar ahora</a>
                     </div>
                 </card>
-                <card class="producto-dos">
+                <card class="col-md-4" class="producto-dos">
                     <div>
                         <p class="precio">
                             $49

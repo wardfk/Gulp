@@ -1,4 +1,326 @@
+@import 'reset','variables','mixin','utils';
 *{
     margin: 0;
     padding: 0;
+}
+body, html{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+p{
+    color: $grisOscuro;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+main{
+    header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    section#one{
+        .amplificar{
+            @extend %flex;
+            flex-direction: column;
+            .buttons{
+                a{
+                    @extend %knoprecht;
+                }
+            }
+        }
+        img{
+            padding: 50px;
+        }
+    }
+    section#componentes{
+        background-color: $grisClaro;
+        .articles{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 5%;
+            article{
+                padding: 20px;
+                min-height: 325px;
+                @extend %flex;
+                flex-direction: column;
+                @extend %cajas;
+                img{
+                    max-width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    section#administracion{
+        .row{
+            padding: 40px 0;
+            .perfecto{
+                height: 60px;
+                line-height: 60px;
+                display: flex;
+                p{
+                    display: flex;
+                    align-items: center;
+                }
+                .icon{
+                    margin-right: 10px;
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                    background-color: $azulMedio;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    section#experiencia{
+        .head{
+            background-color: $azulOscuro;
+            @include caja(100%,400px); 
+            @extend %flex;
+            flex-direction: column;
+            color: $blanco;
+            padding-bottom: 50px;
+            z-index: -1;
+            @extend %trapezium;
+            a{
+                @extend %flex;
+                @extend %knoprecht;
+            }
+        }
+        .nuevo-container{
+            margin-top: -100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cards{
+                padding: 40px 20px;
+                display: flex;
+                flex-direction: row;
+                @extend %cajas;
+                .nuevo-1{
+                    margin: 0 10px;
+                    max-height: 40px;
+                    padding: 0 10px;
+                    line-height: 40px;
+                    @include correcto($bgc:$azulClaro);
+                    p{
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                .nuevo-2{
+                    margin: 0 10px;
+                    max-height: 40px;
+                    padding: 0 10px;
+                    line-height: 40px;
+                    @include correcto($bgc:$naranja);
+                    p{
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                .nuevo-3{
+                    margin: 0 10px;
+                    max-height: 40px;
+                    padding: 0 10px;
+                    line-height: 40px;
+                    @include correcto($bgc:$azulClaro);
+                    p{
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                .nuevo-4{
+                    margin: 0 10px;
+                    max-height: 40px;
+                    padding: 0 10px;
+                    line-height: 40px;
+                    @include correcto($bgc:$verde);
+                    p{
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                .nuevo-5{
+                    margin: 0 10px;
+                    max-height: 40px;
+                    padding: 0 10px;
+                    line-height: 40px;
+                    @include correcto($bgc:$salmon);
+                    p{
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                .nuevo-6{
+                    margin: 0 10px;
+                    max-height: 40px;
+                    padding: 0 10px;
+                    line-height: 40px;
+                    @include correcto($bgc:$naranja);
+                    p{
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    section#caracteristicas{
+        .head{
+            margin: 80px 0;
+            a{
+                @include knoprecht($hoek: 50px, $pad:8px);
+                text-decoration: none;
+            }
+            p{
+                color: $azulOscuro;
+                margin-top: 30px;
+            }
+        }
+        .vinkjes{
+            display: flex;
+            flex-wrap: wrap;
+            .vink-1{
+                @extend %cajas;
+                display: flex;
+                .vinkje{
+                    margin: 10px;
+                    width: 30px;
+                    line-height: 30px;
+                    height: 30px;
+                    background-color: $naranja;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        font-size: 1rem;
+                        color: white;
+                    }
+                }
+            }.vink-2{
+                @extend %cajas;
+                display: flex;
+                .vinkje{
+                    margin: 10px;
+                    width: 30px;
+                    line-height: 30px;
+                    height: 30px;
+                    background-color: $verde;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        font-size: 1rem;
+                        color: white;
+                    }
+                }
+            }
+            .vink-3{
+                @extend %cajas;
+                display: flex;
+                .vinkje{
+                    margin: 10px;
+                    width: 30px;
+                    line-height: 30px;
+                    height: 30px;
+                    background-color: $salmon;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        font-size: 1rem;
+                        color: white;
+                    }
+                }
+            }
+            .vink-4{
+                @extend %cajas;
+                display: flex;
+                .vinkje{
+                    margin: 10px;
+                    width: 30px;
+                    line-height: 30px;
+                    height: 30px;
+                    background-color: $azulMedio;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        font-size: 1rem;
+                        color: white;
+                    }
+                }
+            }
+            .vink-5{
+                @extend %cajas;
+                display: flex;
+                .vinkje{
+                    margin: 10px;
+                    width: 30px;
+                    line-height: 30px;
+                    height: 30px;
+                    background-color: $naranja;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        font-size: 1rem;
+                        color: white;
+                    }
+                }
+            }
+            .vink-6{
+                @extend %cajas;
+                display: flex;
+                .vinkje{
+                    margin: 10px;
+                    width: 30px;
+                    line-height: 30px;
+                    height: 30px;
+                    background-color: $azulClaro;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        font-size: 1rem;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
 }
