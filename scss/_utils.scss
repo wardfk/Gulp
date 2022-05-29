@@ -1,0 +1,18 @@
+$espacios: (
+    mt: margin-top,
+    mr: margin-right,
+    mb: margin-bottom,
+    ml: margin-left,
+    pt: padding-top,
+    pr: padding-right,
+    pb: padding-bottom,
+    pl: padding-left,
+    m: margin,
+    p: padding
+);
+
+@for $i from 1 to 10 {
+    @each $espacio, $valor in $espacios {
+        .#{$espacio}-{#{$valor}: $i * 10px}
+    }
+}
