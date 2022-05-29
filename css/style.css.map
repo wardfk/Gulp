@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,CAAC,CACG,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACb","file":"style.css","sourcesContent":["*{\r\n    margin: 0;\r\n    padding: 0;\r\n}"]}
