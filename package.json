@@ -1,0 +1,22 @@
+{
+  "name": "gulpsass",
+  "version": "1.0.0",
+  "description": "Gulp & Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wardfk/Gulp.git"
+  },
+  "author": "Ward Feys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wardfk/Gulp/issues"
+  },
+  "homepage": "https://github.com/wardfk/Gulp#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
